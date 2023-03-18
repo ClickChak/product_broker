@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Product Detail Page</title>
+	<style>
+
+		body{
+			background-color: lightyellow;
+			font-family: cursive;
+		}
+
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		
+		.image {
+			height: 300px;
+			width: 100%;
+			flex: 1;
+			margin-right: 20px;
+		}
+
+		.img-cont{
+			height: 300px;
+			width: 300px;
+			overflow-y: scroll;
+			overflow-x: hidden;
+		}
+		
+		.description {
+			height: 400px;
+			flex: 2;
+			overflow: scroll;
+		}
+		
+		.specifications {
+			margin-top: 20px;
+		}
+		
+		h1{
+  			padding: 30px ;
+ 		 	background-color: green;
+  			color: white;
+  			text-align: center;
+  		}
+
+  		#add-to-cart-button {
+			 padding: 10px 20px;
+			 background-color: #333;
+			 color: #fff;
+			 border: none;
+			 border-radius: 5px;
+			 font-size: 18px;
+			 cursor: pointer;
+			}
+
+			::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background: lightyellow;
+  }
+
+  ::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+}
+
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Product broker</h1>
+	</header>
+	<br><hr>
+	<div class="container">
+		<div class="img-cont">
+			<img src="pid_002.jpg" alt="Product Image" class="image">
+		</div>
+		
+		<div class="description">
+			<h2>Chris Danel Luxury Quartz Fashionable Wrist Watch</h2>
+			<br><hr>
+			<p style="font-size: 20px;">Price:<b> Rs. 1015</b> <i><s>Rs. 1400</s></i></p>
+			<p style="font-size: 20px;">Product ID: (000002)</p>
+			<p style="font-size: 20px;">Availability: (Yes)</p>
+			<p style="font-size: 20px;">Warranty: (1 year) provided by the brand</p>
+			<p style="float: right; color: gray;">Sold by Product Broker.</p>
+		<center>	<div class="product-item1">
+     <p style="display: none;">
+      item name: Adjustable Hand Grip Strengthener
+      Price: Rs. 475</p>
+     <input id="add-to-cart-button" type="submit" value="Buy Now">
+     </div></center>
+<hr>	
+		</div>
+	</div>
+	
+	<div class="specifications">
+		<h2>Description</h2>
+		<li>100% Genuine Watch (The Brand Guarantees the authenticity of the product)</li>
+		<li>Brand/Series :Chris Danel</li>
+		<li>Model Number : 6006G</li>
+		<li>Water Resistant : 3ATM</li>
+		<li>Features: Classic Design Fashionable</li>
+		<li>1 Year Warranty</li>
+		<li>Brand: Chris Danel, Designer: Design Dial, Mechanical Design, Dial Type: Round dial, Glass Type: Hardlex Crystal, Movement: Japan Quartz, Stylish and Durable, Case Width: 40mm, Strap Length: 9 Inch, Movement : Quartz, Display Type : Analog, Dial Color: Golden, Strap Color: Dark Brown, Band Material Type: PU Leather, Closure : Pin Buckle, Water Resistant: 3 ATM, Warranty: 1 Year Warranty</li>
+
+		<h2>Specifications</h2>
+		<ul>
+			<li>Item: Chris Danel (Cd) Luxury Quartz Fashionable Classic Index Dial Printed Waterproof Wrist Watch</li>
+			<li>Brand:  Chris Danel</li>
+			<li>Dial Size: 40mm</li>
+			<li>Strap Material: Leather</li>
+			<li>Watch Case Shape: Round</li>
+			<li>Glass: Hardlex Crystal</li>
+			<li>Model: 6006G</li>
+			<li>Color: Black</li>
+			<li>Water Resistense: 3m</li>
+		</ul>
+	</div>
+	
+<script type="text/javascript">
+	
+	const divs = document.querySelectorAll('.product-item1');
+
+divs.forEach((div) => {
+  div.addEventListener('click', () => {
+    const value = div.textContent;
+
+    // Store value in local storage
+    localStorage.setItem('payment-amount', value);
+
+    // Open payment page
+    window.location.href = 'epay.html';
+  });
+});
+ 
+
+</script>
+
+</body>
+</html>

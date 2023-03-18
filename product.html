@@ -1,0 +1,309 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Browse the Products</title>
+<link rel="stylesheet" type="text/css" href="style.product.css">
+</head>
+<body>
+
+<center>
+	<h1>Browse Products</h1>
+</center>
+<div class="nav-container">
+      <ul id="nav">
+        <li class="nav-item"><a class="categories" href="#" onclick="openSection('')"> Electronics </a></li>
+        <li class="nav-item"><a class="categories" href="#" onclick="openSection('')"> Fashion and Apparel </a></li>
+        <li class="nav-item"><a class="categories" href="#" onclick="openSection('')"> Home and Garden </a></li>
+        <li class="nav-item"><a class="categories" href="#" onclick="openSection('')"> Health and Beauty </a></li>
+        <li class="nav-item"><a class="categories" href="#" onclick="openSection('')"> Books and Media </a></li>
+        <li class="nav-item"><a class="categories"href="#" onclick="openSection('')"> Sporting Goods and Outdoor Equipment </a></li>
+        <li class="nav-item"><a class="categories" href="#" onclick="openSection('')"> Food and Grocery </a></li>
+        <li class="nav-item"><a class="categories" href="#" onclick="openSection('')"> Toys and Games </a></li>
+        <li class="nav-item"><a class="categories" href="#" onclick="openSection('')"> Office Supplies </a></li>
+        <li class="nav-item"><a class="categories" href="#" onclick="openSection('')"> Pet Supplies </a></li>
+        <li class="nav-item"><a class="categories" href="#" onclick="openSection('')"> Art and Crafts </a></li>
+        <li class="nav-item"><a class="categories"href="#" onclick="openSection('')"> Jewelry and Accessories </a></li>
+        <li class="nav-item"><a class="categories" href="#" onclick="openSection('')"> Travel and Tourism </a></li>
+        <li class="nav-item"><a class="categories" href="#" onclick="openSection('')"> Music and Instruments </a></li>
+        <li class="nav-item"><a class="categories" href="#" onclick="openSection('')"> Baby and Kids Products </a></li>
+        <li class="nav-item"><a class="categories" href="#" onclick="openSection('')"> Industrial and Business Equipment </a></li>
+        <li class="nav-item"><a class="categories" href="#" onclick="openSection('')"> Digital Products </a></li>
+        <li class="nav-item"><a class="categories" href="#" onclick="openSection('')"> Home Improvement and DIY Tools </a></li>
+      </ul>
+</div>
+<section id="main" class="openSection">
+<div class="verymain">
+	<br><br>
+	<a class="gthp" onclick="window.open('affiliate.html')">Go To Home Page</a>
+<br><br>
+	<button id="playBtn">Click Here to enhance the experience</button>
+<div class="intro">
+	<p>Welcome to our product browser! Our platform is designed to offer you a seamless shopping experience, making it easy for you to browse through a wide range of products from various categories. Whether you are looking for electronics, beauty products, clothing, or anything in between, we have got you covered. With detailed product descriptions, multiple images, and user reviews, you can easily find what you are looking for and make an informed decision. With our user-friendly interface, secure payment options, and fast shipping, shopping has never been easier. Start exploring now!	</p>
+</div>
+
+<br><br>
+<center>
+<div class="searchbar">
+<input type="text" placeholder="Search Here ....." id="searchInput" onkeyup="searchValue()" onclick="displayList()">
+    <ul type="none" id="list">
+      <li> Electronics </li>
+      <li>  Fashion and Apparel </li>
+      <li>  Home and Garden </li>
+      <li> Health and Beauty </li>
+      <li>  Books and Media </li>
+      <li> Sporting Goods and Outdoor Equipment </li>
+      <li> Food and Grocery </li>
+      <li> Toys and Games </li>
+      <li> Office Supplies </li>
+      <li> Pet Supplies </li>
+      <li> Art and Crafts </li>
+      <li> Jewelry and Accessories </li>
+      <li> Travel and Tourism </li>
+      <li> Music and Instruments </li>
+      <li> Baby and Kids Products </li>
+      <li> Industrial and Business Equipment </li>
+      <li> Digital Products </li>
+      <li> Home Improvement and DIY Tools </li>
+    </ul>
+</div>
+
+</center>
+<br>
+<h2>Recents</h2>
+<div class="product-grid">
+  <div class="product-item">
+    <a href="#" onclick="window.open('pid_001.html')">
+    <img src="pid_001.jpg" alt="Product image" class="product-image">
+    <h3 class="product-name">Adjustable Hand Grip Strengthener</h3>
+    <div class="product-item1">
+     <p style="display: none;">
+      item name: Adjustable Hand Grip Strengthener
+      Price: Rs. 475</p>
+     <input id="add-to-cart-button" type="submit" value="Rs.475 (Buy Now)">
+     </div>
+    </a>
+  </div>
+
+  <div class="product-item">
+     <a href="#" onclick="window.open('pid_002.html')">
+    <img src="pid_002.jpg" alt="Product image" class="product-image">
+    <h3 class="product-name">Chris Danel Luxury Quartz Watch</h3>
+    <div class="product-item1">
+     <p style="display: none;"> 
+      item name: Chris Danel Luxury Quartz Watch  
+      Price: Rs. 1015</p>
+    <input id="add-to-cart-button" type="submit" value="Rs.1015 (Buy Now)">
+  </div>
+</a>
+  </div>
+
+ <div class="product-item">
+    <img src="[Product Image URL 2]" alt="[Product Name 2]" class="product-image">
+    <h3 class="product-name">[Product Name 2]</h3>
+    <p class="product-description">[Product Description 2]</p>
+    <div class="product-item1">
+      <p style="display: none;">
+      item name:  
+      Price: </p>
+    <input id="add-to-cart-button" type="submit" value="Buy Now">
+     </div>
+  </div>
+
+ <div class="product-item">
+    <img src="[Product Image URL 2]" alt="[Product Name 2]" class="product-image">
+    <h3 class="product-name">[Product Name 2]</h3>
+    <p class="product-description">[Product Description 2]</p>
+    <div class="product-item1">
+      <p style="display: none;">
+      item name: 
+      Price: </p>
+    <input id="add-to-cart-button" type="submit" value="Buy Now" >
+     </div>
+  </div>
+
+   <div class="product-item">
+    <img src="[Product Image URL 2]" alt="[Product Name 2]" class="product-image">
+    <h3 class="product-name">[Product Name 2]</h3>
+    <p class="product-description">[Product Description 2]</p>
+    <div class="product-item1">
+      <p style="display: none;">
+      item name: 
+      Price: </p>
+    <input id="add-to-cart-button" type="submit" value="Buy Now">
+     </div>
+  </div>
+  
+   <div class="product-item">
+    <img src="[Product Image URL 2]" alt="[Product Name 2]" class="product-image">
+    <h3 class="product-name">[Product Name 2]</h3>
+    <p class="product-description">[Product Description 2]</p>
+    <div class="product-item1">
+      <p style="display: none;">
+      item name: 
+      Price: </p>
+    <input id="add-to-cart-button" type="submit" value="Buy Now">
+     </div>
+  </div> 
+</div>
+
+ <h2>Special Offers</h2>
+<center>
+ 	<a class="offers" href="#" onclick="openSection('')"> Valentines Offers </a>
+ 	<a class="offers" href="#" onclick="openSection('')">Free Deliveries</a>
+ 	<a class="offers" href="#" onclick="openSection('')">50% Discounts</a>
+ <br><br>
+ 	<a class="offers" href="#" onclick="openSection('')">30% Discounts</a>
+ 	<a class="offers" href="#" onclick="openSection('')">90% Discounts</a>
+ 	<a class="offers" href="#" onclick="openSection('')"> Limited Sales </a>
+ </center>
+ <br><br>
+</div>
+</section>
+
+<!-- terms -->
+
+<section id="terms" class="hidden">
+     <h2> Terms and Conditions of Product </h2>
+
+<h4>Introduction</h4>
+<p>These Website Standard Terms and Conditions written on this webpage shall manage your use of our website, Webiste Name accessible at Website URL.</p>
+
+<p>By using our Website, you accepted these terms and conditions in full. If you disagree with these terms and conditions or any part of these terms and conditions, you must not use our Website.</p>
+
+<h4>Intellectual Property Rights</h4>
+
+<p>Unless otherwise stated, we or our licensors own the intellectual property rights in the website and material on the website. Subject to the license below, all these intellectual property rights are reserved.</p>
+
+<h4>License to use website</h4>
+<p>You may view, download for caching purposes only, and print pages from the website for your own personal use, subject to the restrictions set out below and elsewhere in these terms and conditions.</p>
+
+<h4>You must not:</h4>
+
+<p>republish material from this website (including republication on another website);</p>
+
+<p>sell, rent or sub-license material from the website;</p>
+
+<p>show any material from the website in public;</p>
+
+<p>reproduce, duplicate, copy or otherwise exploit material on our website for a commercial purpose;</p>
+
+<p>edit or otherwise modify any material on the website; or</p>
+
+<p>redistribute material from this website except for content specifically and expressly made available for redistribution.</p>
+
+<p>Where content is specifically made available for redistribution, it may only be redistributed within your organisation.</p>
+
+<h4>Acceptable use</h4>
+<p>You must not use our website in any way that causes, or may cause, damage to the website or impairment of the availability or accessibility of the website; or in any way which is unlawful, illegal, fraudulent or harmful, or in connection with any unlawful, illegal, fraudulent or harmful purpose or activity.</p>
+
+<p>You must not use our website to copy, store, host, transmit, send, use, publish or distribute any material which consists of (or is linked to) any spyware, computer virus, Trojan horse, worm, keystroke logger, rootkit or other malicious computer software.</p>
+
+<p>You must not conduct any systematic or automated data collection activities (including without limitation scraping, data mining, data extraction and data harvesting) on or in relation to our website without our express written consent.</p>
+
+<p>You must not use our website to transmit or send unsolicited commercial communications.</p>
+
+<p>You must not use our website for any purposes related to marketing without our express written consent.</p>
+
+<h4>Restricted access</h4>
+<p>We reserve the right to restrict access to areas of our website, or indeed our whole website, at our discretion and without notice.</p>
+
+<p>If we provide you with a user ID and password to enable you to access restricted areas of our website or other content or services, you must ensure that the user ID and password are kept confidential at all times.</p>
+
+<p>We may disable your user ID and password at any time in our sole discretion without notice or explanation.</p>
+
+<p>Your content must not be illegal or unlawful, must not infringe any third party's legal rights, and must not be capable of amounting to a criminal offence or give rise to a civil liability, or otherwise be contrary to the law of any country or territory where it is or may be published or received.</p>
+
+<p>Your content, and the use of your content by us in accordance with these terms and conditions, must not:</p>
+
+<p>be libellous or maliciously false;</p>
+
+<p>be obscene or indecent;</p>
+
+<p>infringe any copyright, moral right, database right, trade mark right, design right, right in passing off, or other intellectual property right;</p>
+
+<p>infringe any right of confidence, right of privacy or right under data protection legislation;</p>
+    </section>
+
+<center>
+<audio id="myAudio" controls loop>
+  <source src="mountain-path-125573.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+</center>
+<br>
+  <footer>
+    <p>Copyright ©2023 Affiliate Website</p>
+    <a href="#terms" onclick="openSection('terms')">Terms & Conditions</a>
+<br><br>
+    <a href="#top">Go to top!</a>
+  </footer>
+
+
+
+
+<!-- Script -->
+  <script type="text/javascript">
+     function openSection(sectionId) {
+  var sections = document.getElementsByTagName('section');
+  for (var i = 0; i < sections.length; i++) {
+    sections[i].style.display = 'none';
+  }
+  document.getElementById(sectionId).style.display = 'block';
+  closeNav();
+}
+
+ document.getElementById("playBtn").addEventListener("click", function(){
+        document.getElementById("myAudio").play();
+      });
+
+//searchbar
+
+       function searchValue() {
+        var input = document.getElementById("searchInput").value;
+        var list = document.getElementById("list");
+        var items = list.getElementsByTagName("li");
+
+        for (var i = 0; i < items.length; i++) {
+          if (items[i].innerHTML.toLowerCase().includes(input.toLowerCase())) {
+            items[i].style.display = "block";
+          } else {
+            items[i].style.display = "none";
+          }
+        }
+      }
+
+function displayList() {
+        document.getElementById("list").style.display = "block";
+      }
+
+      window.onclick = function(event) {
+        if (!event.target.matches('#searchInput')) {
+          document.getElementById("list").style.display = "none";
+        }
+      }
+
+
+      const divs = document.querySelectorAll('.product-item1');
+
+divs.forEach((div) => {
+  div.addEventListener('click', () => {
+    const value = div.textContent;
+
+    // Store value in local storage
+    localStorage.setItem('payment-amount', value);
+
+    // Open payment page
+    window.location.href = 'epay.html';
+  });
+});
+ 
+ </script>
+</body>
+</html>
+
+
+</body>
+</html>

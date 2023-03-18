@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Product Detail Page</title>
+	<style>
+
+		body{
+			background-color: lightyellow;
+			font-family: cursive;
+		}
+
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		
+		.image {
+			height: 300px;
+			width: 100%;
+			flex: 1;
+			margin-right: 20px;
+		}
+
+		.img-cont{
+			height: 300px;
+			width: 300px;
+			overflow-y: scroll;
+			overflow-x: hidden;
+		}
+		
+		.description {
+			height: 400px;
+			flex: 2;
+			overflow: scroll;
+		}
+		
+		.specifications {
+			margin-top: 20px;
+		}
+		
+		h1{
+  			padding: 30px ;
+ 		 	background-color: green;
+  			color: white;
+  			text-align: center;
+  		}
+
+  		#add-to-cart-button {
+			 padding: 10px 20px;
+			 background-color: #333;
+			 color: #fff;
+			 border: none;
+			 border-radius: 5px;
+			 font-size: 18px;
+			 cursor: pointer;
+			}
+
+			::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background: lightyellow;
+  }
+
+  ::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+}
+
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Product broker</h1>
+	</header>
+	<br><hr>
+	<div class="container">
+		<div class="img-cont">
+			<img src="pid_001.jpg" alt="Product Image" class="image">
+		</div>
+		
+		<div class="description">
+			<h2>Adjustable Handgrip Strengthner</h2>
+			<br><hr>
+			<p style="font-size: 20px;">Price:<b> Rs. 475</b> <i><s>Rs. 680</s></i></p>
+			<p style="font-size: 20px;">Product ID: (000001)</p>
+			<p style="font-size: 20px;">Availability: (Yes)</p>
+			<p style="font-size: 20px;">Warranty: (Not available)</p>
+			<p style="float: right; color: gray;">Sold by Product Broker.</p>
+		<center>	<div class="product-item1">
+     <p style="display: none;">
+      item name: Adjustable Hand Grip Strengthener
+      Price: Rs. 475</p>
+     <input id="add-to-cart-button" type="submit" value="Buy Now">
+     </div></center>
+<hr>	
+		</div>
+	</div>
+	
+	<div class="specifications">
+		<h2>Description</h2>
+		<li>EXCELLENT HAND MUSCLE STRENGTHENER: This hand grip strengthener is ideal for improving strength, power and speed in the wrists, fingers and forearms. Prefect for athletes, musicians, rock climbers, golfers and tennis players</li>
+		<li>REHABILITATION EXERCISER: Hand grippers also work great for rehabilitation. If you suffer from rheumatoid arthritis, arthritis, carpal tunnel, tendonitis, tennis elbow and are on the way to recovery from a fractured or broken wrist, or tendon surgery, then this is the perfect gripper for you</li>
+		<li>COMFORTABLY FIT: Ergonomically designed, it perfect for men and women, seniors and teens,Non-slip handles covered with soft, comfortable and durable rubber for frequent and comfy usage</li>
+		<li>ADJUSTABLE: This tool is constructed to be durable and offers users a top quality design with stainless steel tension springs, comes with adjustable dial that can be adjusted from 22 to 88 pounds (10-40KG)</li>
+		<li>ESSENTIAL HOME & OFFICE FITNESS: Squeeze and soothe anxiety away while increasing blood flow to your hand, finger and arm.Perfect hand workout that can be done in your home or office and will build your hand and grip strength with just 5 minutes per day,</li>
+		<li>Portable and popular equipment makes a nice gift!</li>
+
+		<h2>Specifications</h2>
+		<ul>
+			<li>Item: Adjustable Handgrip Strengthner</li>
+			<li>Brand: No Brand</li>
+			<li>Size: N/A</li>
+		</ul>
+	</div>
+	
+<script type="text/javascript">
+	
+	const divs = document.querySelectorAll('.product-item1');
+
+divs.forEach((div) => {
+  div.addEventListener('click', () => {
+    const value = div.textContent;
+
+    // Store value in local storage
+    localStorage.setItem('payment-amount', value);
+
+    // Open payment page
+    window.location.href = 'epay.html';
+  });
+});
+ 
+
+</script>
+
+</body>
+</html>
